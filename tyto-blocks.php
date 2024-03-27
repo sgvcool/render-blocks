@@ -1,12 +1,9 @@
 <?php
 /*
-Plugin Name:  Tyto Blocks
-Plugin URI:   https://www.whiteweb.co.il/
+Plugin Name:  Render Gutenberg Blocks Plugin
 Description:  Create and manage blocks
 Version:      1.0
-Author:       WhiteWebWorx
-Author URI:   https://www.whiteweb.co.il/
-Text Domain:  tyto-blocks
+Author:       Serhii Herasymenko
 Domain Path:       /languages
 */
 
