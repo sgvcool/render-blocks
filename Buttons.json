@@ -1,0 +1,260 @@
+{
+	"ID": 0,
+	"key": "field_630369c4c37750101",
+	"label": "Buttons",
+	"name": "buttons",
+	"_name": "buttons",
+	"_valid": 1,
+	"prefix": "acf",
+	"type": "repeater",
+	"instructions": "",
+	"required": 0,
+	"conditional_logic": 0,
+	"wrapper": {
+		"width": "",
+		"class": "",
+		"id": ""
+	},
+	"collapsed": "",
+	"min": 0,
+	"max": 0,
+	"layout": "row",
+	"button_label": "",
+	"sub_fields": [{
+			"key": "field_630369c4c37760101",
+			"label": "Button Name",
+			"name": "button_name",
+			"_name": "button_name",
+			"_valid": 1,
+			"prefix": "acf",
+			"type": "text",
+			"instructions": "",
+			"required": 0,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "",
+				"class": "",
+				"id": ""
+			},
+			"default_value": "",
+			"placeholder": "",
+			"prepend": "",
+			"append": "",
+			"maxlength": ""
+		},
+		{
+			"key": "field_630369c4c37770101",
+			"label": "Button Type",
+			"name": "button_type",
+			"_name": "button_type",
+			"_valid": 1,
+			"prefix": "acf",
+			"type": "select",
+			"instructions": "",
+			"required": 0,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "",
+				"class": "",
+				"id": ""
+			},
+			"choices": {
+				"link": "Link",
+				"scroll": "Scroll To Element",
+				"popup": "Pop-ups"
+			},
+			"default_value": false,
+			"allow_null": 0,
+			"multiple": 0,
+			"ui": 0,
+			"return_format": "value",
+			"ajax": 0,
+			"placeholder": ""
+		},
+		{
+			"key": "field_630369c4c37780101",
+			"label": "Link",
+			"name": "link",
+			"_name": "link",
+			"_valid": 1,
+			"prefix": "acf",
+			"type": "text",
+			"instructions": "",
+			"required": 0,
+			"conditional_logic": [
+				[{
+					"field": "field_630369c4c37770101",
+					"operator": "==",
+					"value": "link"
+				}]
+			],
+			"wrapper": {
+				"width": "",
+				"class": "",
+				"id": ""
+			},
+			"default_value": "",
+			"placeholder": "",
+			"prepend": "",
+			"append": "",
+			"maxlength": ""
+		},
+		{
+			"key": "field_630369c4c37790101",
+			"label": "Link Target",
+			"name": "link_target",
+			"_name": "link_target",
+			"_valid": 1,
+			"prefix": "acf",
+			"type": "select",
+			"instructions": "",
+			"required": 0,
+			"conditional_logic": [
+				[{
+					"field": "field_630369c4c37780101",
+					"operator": "!=empty",
+					"value": ""
+				}]
+			],
+			"wrapper": {
+				"width": "",
+				"class": "",
+				"id": ""
+			},
+			"choices": {
+				"_self": "Self",
+				"_blank": "Blank"
+			},
+			"default_value": "self",
+			"allow_null": 0,
+			"multiple": 0,
+			"ui": 0,
+			"ajax": 0,
+			"return_format": "value",
+			"placeholder": ""
+		},
+		{
+			"key": "field_630369c4c377a0101",
+			"label": "Button Scroll To (Element ID)",
+			"name": "button_scroll_to_element_id",
+			"_name": "button_scroll_to_element_id",
+			"_valid": 1,
+			"prefix": "acf",
+			"type": "text",
+			"instructions": "",
+			"required": 0,
+			"conditional_logic": [
+				[{
+					"field": "field_630369c4c37770101",
+					"operator": "==",
+					"value": "scroll"
+				}]
+			],
+			"wrapper": {
+				"width": "",
+				"class": "",
+				"id": ""
+			},
+			"default_value": "",
+			"placeholder": "",
+			"prepend": "",
+			"append": "",
+			"maxlength": ""
+		},
+		{
+			"key": "field_630369c4c377b0101",
+			"label": "Pop-ups",
+			"name": "pop_ups",
+			"_name": "pop_ups",
+			"_valid": 1,
+			"prefix": "acf",
+			"type": "post_object",
+			"instructions": "",
+			"required": 0,
+			"conditional_logic": [
+				[{
+					"field": "field_630369c4c37770101",
+					"operator": "==",
+					"value": "popup"
+				}]
+			],
+			"wrapper": {
+				"width": "",
+				"class": "",
+				"id": ""
+			},
+			"post_type": [
+				"popups",
+				"popup"
+			],
+			"taxonomy": "",
+			"allow_null": 0,
+			"multiple": 0,
+			"return_format": "object",
+			"ui": 1
+		},
+		{
+			"key": "field_630369c5c37820101",
+			"label": "Select Button Color",
+			"name": "select_button_color",
+			"_name": "select_button_color",
+			"_valid": 1,
+			"prefix": "acf",
+			"type": "select",
+			"instructions": "",
+			"required": 0,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "",
+				"class": "",
+				"id": ""
+			},
+			"choices": {
+				"white": "White",
+				"brightgreenbg": "Bright Green",
+				"transparent": "Transparent",
+				"transparent_white": "Transparent with white text and white border",
+				"transparent_white_hover_black": "Transparent with white text and white border - hover white bg and black color",
+				"willowgreen": "Willow Green",
+				"hospitalgreen": "Hospital Green",
+				"onlylink": "No-Background",
+				"onlylink-arrow": "No-Background with arrow",
+				"onlylink-arrow-green": "No-Background with green arrow",
+				"tytopurple": "Tyto Purple",
+				"transparentPurpleArrow": "Transparent Purple Arrow",
+				"transparentBlackArrow": "Transparent Black Arrow",
+				"transparentWhiteArrow": "Transparent White Arrow"
+			},
+			"default_value": false,
+			"allow_null": 0,
+			"multiple": 0,
+			"ui": 0,
+			"ajax": 0,
+			"return_format": "value",
+			"placeholder": ""
+		},
+		{
+			"key": "field_6416b96f3fff3",
+			"label": "Play Video inside iPhone Frame",
+			"name": "play_video_inside_iphone_frame",
+			"_name": "play_video_inside_iphone_frame",
+			"_valid": 1,
+			"prefix": "acf",
+			"type": "true_false",
+			"instructions": "Check this to play your video inside iPhone frame",
+			"required": 0,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "",
+				"class": "",
+				"id": ""
+			},
+			"message": "",
+			"default_value": 0,
+			"ui": 0,
+			"ui_on_text": "",
+			"ui_off_text": ""
+		}
+			
+	]
+} 
