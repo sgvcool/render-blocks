@@ -1,7 +1,7 @@
 <?php
 
 /* 
- * WhiteWebWorx
+ * Blocks MetaBox
  * MQ
  */
 class tyto_blocksMetaBox{
